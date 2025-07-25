@@ -1,6 +1,6 @@
 
 export default {
-  base: '/',
+  base: '/pixi/',
   server: {
     watch: {
       usePolling: true 
