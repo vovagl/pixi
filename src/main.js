@@ -1,6 +1,7 @@
 import { Application, Assets, Container, Sprite, Graphics } from 'pixi.js';
 import gsap from 'gsap';
 import { Howl } from 'howler';
+const base = import.meta.env.BASE_URL;
 
 const REELS = 5;
 const ROWS = 3;
@@ -8,21 +9,23 @@ const ICON_SIZE = 150;
 const ICON_PADDING = 10;
 const SPIN_SPEED = 15;
 const sounds={
-  stop: new Howl({ src: ['assets/audio/reel-stop.mp3'] }),
-  spin: new Howl({ src: ['assets/audio/spin.mp3'], loop: true }),
-  win: new Howl({ src: ['assets/audio/win.mp3'] }),
-  noWin: new Howl({ src: ['assets/audio/no-win.mp3'] }),
-  bigWin: new Howl({ src: ['assets/audio/big-win.mp3'] }),
+  stop: new Howl({ src: [`${base}assets/audio/reel-stop.mp3`] }),
+  spin: new Howl({ src: [`${base}assets/audio/spin.mp3`], loop: true }),
+  win: new Howl({ src: [`${base}assets/audio/win.mp3`] }),
+  noWin: new Howl({ src: [`${base}assets/audio/no-win.mp3`] }),
+  bigWin: new Howl({ src: [`${base}assets/audio/big-win.mp3`] }),
 }
 const iconsURLs = [
-  '/assets/a.png',
-  '/assets/b.png',
-  '/assets/f.png',
-  '/assets/g.png',
-  '/assets/h.png',
-  '/assets/j.png',
-  '/assets/l.png',
-  '/assets/n.png',
+  `${base}/assets/a.png`,
+  `${base}/assets/b.png`,
+  `${base}/assets/f.png`,
+  `${base}/assets/g.png`,
+  `${base}/assets/h.png`,
+  `${base}/assets/h.png`,
+  `${base}/assets/h.png`,
+  `${base}/assets/j.png`,
+  `${base}/assets/l.png`,
+  `${base}/assets/n.png`,
 ];
 
 let app;
