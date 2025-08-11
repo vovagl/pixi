@@ -16,16 +16,14 @@ const sounds={
   bigWin: new Howl({ src: [`${base}assets/audio/big-win.mp3`] }),
 }
 const iconsURLs = [
-  `${base}/assets/a.png`,
-  `${base}/assets/b.png`,
-  `${base}/assets/f.png`,
-  `${base}/assets/g.png`,
-  `${base}/assets/h.png`,
-  `${base}/assets/h.png`,
-  `${base}/assets/h.png`,
-  `${base}/assets/j.png`,
-  `${base}/assets/l.png`,
-  `${base}/assets/n.png`,
+  `${base}assets/a.png`,
+  `${base}assets/b.png`,
+  `${base}assets/f.png`,
+  `${base}assets/g.png`,
+  `${base}assets/h.png`,
+  `${base}assets/j.png`,
+  `${base}assets/l.png`,
+  `${base}assets/n.png`,
 ];
 
 let app;
